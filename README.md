@@ -1,20 +1,22 @@
 <div align="center">
-# 🚀 Online Whiteboard Scribble Pad
-### *Modern, High-Performance JavaScript Solution & Developer Suite*
 
-<p align="center">
-  [![Architect](https://img.shields.io/badge/Architect-Hsini%20Mohamed-0055ff?style=for-the-badge&logo=github&logoColor=white)](https://hsini.dev)
-  [![Portfolio](https://img.shields.io/badge/Portfolio-hsini.dev-00c853?style=for-the-badge&logo=google-chrome&logoColor=white)](https://hsini.dev)
-  [![Language](https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge)](https://github.com/hsinidev)
-  [![Framework](https://img.shields.io/badge/Framework-JavaScript-6366f1?style=for-the-badge)](https://github.com/hsinidev)
-  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-</p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=180&section=header&text=Online%20Whiteboard%20Scribb&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=38" width="100%" style="max-width: 100%; border-radius: 12px; margin-bottom: 20px;" alt="Online Whiteboard Scribble Pad Header Banner" />
 
-![Cosmic Canvas Screenshot](https://storage.googleapis.com/aistudio-hosting/project-images/cosmic-canvas-demo.png)
+  <h1>🚀 Online Whiteboard Scribble Pad</h1>
+  <p><em>Modern, High-Performance JavaScript Solution & Developer Suite</em></p>
+
+  <p align="center">
+    <a href="https://hsini.dev"><img src="https://img.shields.io/badge/Architect-Hsini%20Mohamed-0055ff?style=for-the-badge&logo=github&logoColor=white" alt="Architect: Hsini Mohamed" /></a>
+    <a href="https://hsini.dev"><img src="https://img.shields.io/badge/Portfolio-hsini.dev-00c853?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio: hsini.dev" /></a>
+    <a href="https://github.com/hsinidev"><img src="https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge" alt="Language: TypeScript" /></a>
+    <a href="https://github.com/hsinidev"><img src="https://img.shields.io/badge/Framework-JavaScript-6366f1?style=for-the-badge" alt="Framework: JavaScript" /></a>
+    <a href="https://github.com/hsinidev/Online-Whiteboard-Scribble-Pad"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT" /></a>
+  </p>
 
 </div>
 
 ---
+
 ## 🌟 Executive Overview
 
 **Online Whiteboard Scribble Pad** is a production-grade **TypeScript** platform engineered for high reliability, clean architectural separation, and frictionless developer workflow.
@@ -27,6 +29,7 @@
 - **Production Ready**: Built-in error resilience, validation, and structured logging.
 
 ---
+
 ## 🏗️ Architecture & Technology Stack
 
 - **Primary Language**: `TypeScript`
@@ -34,156 +37,6 @@
 - **Design Pattern**: Modular Clean Architecture / Domain-Driven Design
 - **License**: MIT Open Source Attribution
 
-## 📖 Deep-Dive Technical Documentation
-
-# 🪐 Cosmic Canvas: A Modern Online Whiteboard
-
-
-A feature-rich, real-time digital whiteboard built with React, TypeScript, and the HTML Canvas API. Designed for creativity, brainstorming, and collaboration, set against an immersive, animated cosmic backdrop.
-
-**[Live Demo](https://example.com) &middot; [Report Bug](https://example.com/issues) &middot; [Request Feature](https://example.com/issues)**
-
-![Cosmic Canvas Screenshot](https://storage.googleapis.com/aistudio-hosting/project-images/cosmic-canvas-demo.png)
-
----
-
-## Table of Contents
-
-- [About The Project](#about-the-project)
-- [Key Features](#key-features)
-- [Built With](#built-with)
-- [Architecture Overview](#architecture-overview)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Contact](#contact)
-
----
-
-## About The Project
-
-Cosmic Canvas was built to provide a seamless and inspiring digital drawing experience. The primary goal was to create a high-performance, aesthetically pleasing, and user-friendly whiteboard application using modern web technologies.
-
-This project demonstrates:
-- **Direct DOM manipulation** via the HTML Canvas API for high-performance, real-time drawing.
-- **Modern React principles**, including functional components, hooks, and TypeScript for robust, scalable architecture.
-- **Separation of concerns**, with complex canvas logic abstracted into a reusable custom hook (`useWhiteboard`).
-- **Responsive and beautiful UI/UX** design using Tailwind CSS, focused on creating a comfortable and friendly user experience.
-
----
-
-## Key Features
-
-- **🎨 Infinite Creativity**: A full-screen, responsive canvas for free-form drawing and brainstorming.
-- **🖌️ Dynamic Brush Controls**:
-  - **Color Picker**: Select any color imaginable for your strokes.
-  - **Adjustable Size**: Use the intuitive slider to control brush thickness in real-time.
-- **⚡ Powerful Actions**:
-  - **Undo**: Instantly revert your last stroke with a simple state management system.
-  - **Clear Canvas**: Start fresh with a single click.
-  - **Download as PNG**: Save your masterpiece to your device with a transparent background.
-- **🚀 Immersive & Modern UI**:
-  - A beautiful, animated multi-layer galaxy background for an inspiring experience.
-  - A sleek, floating toolbar that is intuitive and stays out of your way.
-  - Fully responsive design that works flawlessly on desktop, tablet, and mobile devices.
-
----
-
-## Built With
-
-This project leverages a modern, powerful tech stack for a high-performance and maintainable application.
-
-- **[React](https://reactjs.org/)**: A JavaScript library for building user interfaces.
-- **[TypeScript](https://www.typescriptlang.org/)**: A typed superset of JavaScript that builds on JavaScript.
-- **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for rapid UI development.
-- **HTML Canvas API**: The core technology for all rendering and drawing logic.
-- **Vite**: (Assumed for modern local development) A next-generation frontend tooling.
-
----
-
-## Architecture Overview
-
-The application is structured to be modular and maintainable, with a clear separation between UI and business logic.
-
-- **`App.tsx`**: The main application component that orchestrates the layout and manages global state like modals.
-- **`components/`**: Contains all the presentational React components.
-  - **`Layout.tsx`**: Provides the global structure, including the animated galaxy background, header, and footer.
-  - **`Whiteboard.tsx`**: The core UI component containing the `<canvas>` element and the floating toolbar. It is a "dumb" component that receives all its logic and event handlers from its parent.
-- **`hooks/`**:
-  - **`useWhiteboard.ts`**: This powerful custom hook is the brain of the application. It encapsulates all canvas-related logic:
-    - Initializing the canvas and its 2D context.
-    - Handling all drawing events (`mousedown`, `mousemove`, etc.).
-    - Managing state for color, line width, and drawing status.
-    - Implementing the history stack for the `undo` functionality.
-    - Providing utility functions (`clearCanvas`, `downloadImage`).
-This architecture ensures that the `Whiteboard` component remains lean and focused on rendering, while the complex logic is reusable and easy to test.
-
----
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-You need to have Node.js and npm installed on your machine.
-- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username/cosmic-canvas.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Run the development server
-   ```sh
-   npm run dev
-   ```
-4. Open [http://localhost:5173](http://localhost:5173) (or similar) to view it in the browser.
-
----
-
-## Usage
-
-The Cosmic Canvas is designed for simplicity and intuitive interaction.
-
-1.  **Open the application** in your web browser.
-2.  **Start Drawing**: Click (or tap) and drag your cursor across the central canvas area to draw.
-3.  **Use the Toolbar**:
-    - Click the **color swatch** to open your system's color picker.
-    - Drag the **size slider** to change the thickness of your lines.
-    - Click **Undo**, **Clear**, or **Download** to perform the respective actions.
-4.  **Save Your Work**: Click the "Download" button to save a high-quality PNG image of your current canvas.
-
----
-
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
----
-
-
-
----
-
-## Contact
-
-HSINI MOHAMED - [hsini.web@gmail.com](mailto:hsini.web@gmail.com)
-
-Project Link: [https://github.com/hsinidev/cosmic-canvas](https://github.com/hsinidev/cosmic-canvas)
-
----
 ## 🚀 Quick Start & Installation
 
 ### 1. Clone the Repository
